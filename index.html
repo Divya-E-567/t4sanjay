@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>t4sanjay</title>
+    <link rel="icon" type="image/x-icon" href="data:image/webp;base64,UklGRh4xAABXRUJQVlA4IBIxAADwogCdASoGAQ4BPp1CmkilpCKhLLgMMLATiU3b0v0tc83Uf2q9gEhvOvH81P7lLx7Mb+V79/o3/sO6z8xPns+lX/Z+n/1O/9q9QDzofWJ/wO//6Dv9z/z35Nec/5/9b/pfzH+RK7X2qamXb3+w/vv7qfHr+E/6X2++jPy+1CPyj+Y/6D7g/Vp2V9vv+H6gvuF9c/2v+P/er/I/JT9R/xP8J6m/0v+g/5HuAfrh/wPLF8K7zT9hfxV+wT+b/1z/r/5v8vvqJ/y//j/u/yx9w31h/8v9N8B/8//tf/T/w3tzf//3T/up///dO/ar//pSh3Grurbt8mNXdW3b4NfDvMmDPg4dGdPRxBCJ9OkF3yY1d0+Q///4VHmH+s925ubJxV53SztxKXZdH7clONR08R9RhuAcntIOfxk4Plve1bP4i+f10ryGkb+JqZSr1KdkAfkC/+Tqhvr7hhWdP9xKyO7rQB51uBDaM++wTkzY9GChtan5mmQ8OdZuq9BzL3x7rJ37csaKHwhLhI2cFRIfadDHXY16eTDaKBaBzTly5myDh8a2Tf4UdYsf/pLWVD/thZc3s+rR3SDNk4fJUsmEnESvIHb9mtX8FSkynSo9v4UdSsZk4aBaFECYCMXw54FtPv6fBd/q+cR54BicePmsoCyISCWS5oRYcUprgMxwGp7LnvR7LZWNshax8Xq36OBF8M0Xepc2p1H5wB8a7MkxWJQr40ucF0Eg0c0uzYnR5LL0Qtf0KVRhd9uQ3jKdtRpXIfCfo5j/clpki/OftsVmjxaCI5Ubr6gyR8mcA9T3LpApJ19WKZTMFV4KcAdPkLNQ4BxW3kYEfXUlipQEHd1cbGEaz8PDWSfV7jiQvczLT0ipY928ijGpnk37bJDiye/XtTYco3BOM2ZTRCuxqbawYktQu7aNlQ67ldOs4rQKjZIDUIhZ+b/vTOCDC+QDCGkmn7sVd4WHwDEqqnFX3S/4iEpKUOpA1NzFyNbj5nBPRJ0eG2BhZDnQ/v1eV/E4GpAnyGqiOasIExmnzISYGD5Pa5XJF3aEd4ADAmHKiGGGTJAv92pU4X9R1por8v4EMXIv9E4ey+t6Q6yo+OwYsgvAXlIP28S2AlHkpaCNAATnoSAqy8vNDs7BHOSJP/uoLpqMSChyg5FK57ojGkfSeBYpIJEZbpoqPhEs0QoijHVP4bUYt+hXkk+7xlr7Ln6MO3hu9L45ulTRX0VEYbvCXTP5PDGZPAzHbaRwkjOJdPkK8JtH7Vtcamxf/o1UGN/c3IH93lSUM2BAKE6qkGr+FjRYSABwlqUVbu1ON6gE1lDhmK0XSf8gh60jHZzVTXzVtfadV1kn6w3lNA0gO3eZiAgwOj3AiZNFfGQRWgQyPkxwGu572igMnAuMlj+t/N13k5x/8AsOkgWh53DleZfIjl6x/PCBGA+CX3cvb6IEG2WBeCa9cATX+MDkAn/u03Vl6zE7vp3wzHRojqUmHDqM9RFJzDUeTl86CX0mkJ9Ucc/KvH+f/5yGS6avJW+Tu0g3e9/Yax3SIaumpEpfOwwGoodD9S1ot3KuP3+husBfg36crVPcq/fJZcbid3c2oTOn8t4M5vZSPl/lL2dTNoXxq38+qvA6K+tm/pRXZq3DH/6YM8mNAM3Qf+vTMCA31TRHNuLCK/1uA7hrCbgZxC09+FSj/n8qJvPZSoou/zKeZ4h8BwxVNwZxUt36KJkH61/GqGSOkRB+Nu3yY1d1bdv1Orbt8iAAAP77/VAAAAAAvtrKeqfQSQJjBDVuV/ThmHvfH+9RlSxhnYm/z+Ks7SjfwS8RK/JSrYAf9+5sbP20EmG5/nvTyC+aAw3tI9o6xziUqtDb/yHiN0FeElvBiCRGivNhxvwY5FP9j0SdGuvfU60t2ZF2oNObq6mEx/Y9ZAmSOZbgfm/n/AV+mV9B6tfxkimaf9gci1v7j2RsNHYh/P9ZnIKfpgnYJ70Kdu8pb6/deLoClNzLEaaANaIOw8jHXVJ4QjeoVFAjbpn3zqDXbdwABemID7hLssMtVuRkwoiOs5I9lYup0W69YqNYbskekOjyYSw3buwE18OLwu60TndkofSsRpi3+sCrA0XTnXZbZgflDuQBQeEs/gBRvkGU/keVFQsNY1yewq8n+uJV3TsJjbXA+LRdUo6RbDDwSxVNqEuAwS3XsTdrONMhyNb0zDWj2aSODImDlMp1txj5KDwjVK//wrfAGCVKzPjgzTjME1DKA5/yHS29ZNym5tEDxHl76faLh859wNx0jjumbDs9de5e4zH4M6NDkV4ZyqVFyCVG43ZHCvxGU2DLG82uII2TscgqQuZ0opDZF6zxPLtOBFFeI6zcFsgLPN4eZ4BuaBH9G6+Er8s/y0n8B+9TpMpp7oyibNMoKbCykUSIhyjrHZW/yIptz3BTJK/MvOGXZZF4AK8zs0R45hs1m8gVPGbcn/u2DmgP02cm5bsa/1xTQ3iNVuOSB1sBznmpmyUwGzsNLy1n24VpY67+f74D+VaFDZ6/4i4KcLP63rivsWVyBWPYaxOfy1KG7e9645JX/y8npqzjat+Lk0PiVRL8oL2ZseldkUdbk1Dk/NoYJuxXgATsJp+BV2ZsYXLmeXWU+gRAPlyUqPSkQcVh8+PoyxyQ9M8c6VKdGq1560TgtYrExBx/FGZasm8sp0cnP1hEVVv3qAiE4Y6NtfDFkVDL2OLHb8PfVOiYrBHLtIXMX4YObBGFKwffp9Tl5cz1ZnHOPZT2KdSKEKEurbZWxtidRaUozHS8GPM/cJFvYUqtlbQD7JY6P5pQH1WxtfYZbpLjQ2DpuQdjjHksWHWT0YrMCgtn2I+8rv7HfLKS1QmBo73/b+XmvM5eLY0z5cHgy2KzcZr8KAitj++GpzTZ6TzMob2AS3LgC0DR0X00tRBL/aZ2xSyYAPG7Ad3CQRteh0mxhLP1xPci1usu4HOSXnbr251PVW/3KaC5W1wWNdarIrK8pq3PQJLTVyeuiYHD0FjPNJBXVBsbjvi4tg0rinYHrntwDvm0SpL707JPt40+eKYCfypHQD7fm1axCgOTWjCqO2AbC7HO+F8YzasXMxHt88cS1WLtqk+6HeuOsfIdoZHJaXroM09gymjiOSgUiUcPPljvCqJh91F/HqRKEm/wR85S4ePZ3EJQ5tnQ332uN+gBadVC8nzImPZaaldWL52ucIt9d2GCrPinOhGdCC52ubYL09NBtJ5p5RNpY7dW5CfjeSJcpz//PVEoXLU/gVO+zA09YQ1ns469aXBoqLduKhESLPq3PbclwANOwrkEkyzMWcPg1zrfNO0+Lqu/grMs+M7RhAc5rnheukGqZOPmB5L2wD7xMXrECPt9PmsWyifiYkw3pw092HjQPkyUR2U3IpaWxpjf+i8oiDVYe59GCc8+sW8TwW+v95zVZ8bXL3KCXZA4Ar8DPOa/OIAhhOhH4nwegXlvllLfNbKc8yw492J7Ho/gMvREZqpakz+u4jw7xLRwmSQYB1jgDFpyp07CYyIUi9Gf9vtX0Z7Q2x89aeJIFqD7HrlK+m3t0UoXDZIfzDboH1c0LzQfeaqQ2NefL4/ruN9RLsbxLAe1bhX5SPNOy5xM7aHTM9w9eBkEx8psieQ78zYUjT1+ZMY8tM7Rknk2KEwcaEAthmNIkDfonDuGo3sY0H2Mc64q1ob4IMH/Cp3ZCiJ6of/GtPwu9ztV4tLwDNSMHXghDDTsHveTg7q/3yVqirST08qzGGpBNttr+hYyZqFSlvwwMSgLu8Zk6RD4M+r8sP74Rsqp9aJxF1Dp0eVpAWyw0VWfjwdfizbk8deQuzSp9ahoLXNnUr1F49YCnMzcDLz9vF4G8x/bALUkb7mtiIgYn1u3afKJHx92dNJew76ykWbr9/TVLRqCGPYSupzKYO5s8gJPmhd6DGmL5MxDRGz+f5sM3SYAlVFGO2rG1+ARNHwt9SE/cyB95TmngJYpvX44Nfro8DDwwSGpfqJSOnAgnyUjOQ0v9qKct8h/TewuCGw/MAIIWNEZldbZ15Ea8O355n1kS355ev2qKLR0sAtICQyXk9wnSh9rrQsdpa2dFS1bqMMNnTiV0qTBtiM7xSqAfvkKk6my1T0wHkEukSUCdYlY6cqESKpjDVOyu4P0p/loHgSY1voN9F446oU541vWUXWAjFxGiCfjnbGvsfKzAB638Hw3gZxpNxR7tFbDy5srMVJC0PDFB5LrtDf0wIl5uMqKmlC/F5Fx7L1fpvMG7HZVQI+LZrGQuX+jElkG7Bf03VBtLOCyJzuN6TzlLG2ADTHM+VSkcrgie2iUaTL+JiJtSWrePUzIOJoOGYH0rnDtgoO/aUyiCFiQACHqPCa44Gdts3OWbk+WJ/Jy7x4bECpR2euqlaHjzJ6ZwP+6KYoCheB0Xi4SB/B9rSDYIj1vYB4gz309rv/ZEPYjL6VpM7cmaj7vRymeYQ9UJhHjuqAD8KrzMnZ2DrJDeVmeyd7zmkZwhKIBcFMv5f9go7cdMOADV+RaRtxwbPNVkk9P0KeAAUwMVKpOQjuqg0rUAsqIoEqu/PLRzGzgUvwP0J6StWEIUJV/QeGNaC76uOgIG99QXPbkf9Vj2lvinHPQlbhB+cA+69DA/GT98s7Ui9hXkwLNX7nfxcvnB+dAaf0CSYkx99ofbg05C49aeSiYwYjuqqgFUVWv0ukGvLqgFFV0g93IBRcq8jwS/G2XzywERkcnYneJnr1lzeCAsswJGPIdciV1FhX4qs/NExGtFBG+bGH3YpnEZV30jkUf0UJZOR5mNpKCWj1yySrrivin//qCPFQNFtB/tGviz0dn7sM3tAnD4/61njGrMrWC+AQxfa936/1Be75I0BmifN1ow7j4jK2ag6LdWn2FPYsTNytWQ1ET9z1bg3YwsV1QxL/c75myBL965OyrjHcB7ZrJ/ZR6JnRFxc4o1qdObPIqhozgh3P+6D/ngjtK5aZz13GS22obZ7NtQY5BraLwetkCDDlwxDnXoaJEeaAIM8iJaI4O0GoMiuF4QVuWJ2xslcWPrWrHZA2KkkkJn2BoMfLtLHjUiNrTCx9vOl17fx2UPk3RCXmcC87acOzy/0Y/WxXBN5PsFe0nN/dTnyZrJoYgKzeRjcrMOO7TfGa0+sB7M3oEJLhowhelwFMrUUtAIQGuA1Wlgqr4jcbzqOxHrlemC2koEo0i+yPkoMJUis1Py9d2VU4+YImNNRNkfh2AzsJPiEF1f3s48BC8I7sXb/K+Y5ZH/xV63iK2teR7Ewep/B/3tl9QXU5S9AxD82DGcdMFJ35Y4m0tnoY4K5UT+LUH/wMgGEa5tfFfc/jX93hUziDnmJjnhzF7vpf+p+Ce/5cMl2cIGHsf5xJNXgcva7EXadNNrS5C2zuuPA0VEYyKde9NtwbETX56kBPwflkdx7d4b8Gu+B3C/ft4zI7em4P2ugqCCf6mJCyX35uyg7HLOm7AeBMeDeNFyzLsJf8QzFJePwlNncyp6byGYvS1fjj1aAeFEOir+Fe9lCWFqgds0tbjITk5LlUjFCsEyn/LK9FUNCuh1drT1D6VExG71rVMQ0DSNep9FF9ciSZAkeIrXSHfs3XV5ahMd7H8WgGCJpfqU6dAVeWbOmtt7TeYyPrSu7HT26DsS9bZjck3R97WKUIz4+9fYXZi2RnIk8wguILD+WwNv9yIjbK6m+nY1eqZ/UyYMJ73JHxZp3NJUMInjJtAry9PmeMO8FTfMicP+uIe5GfzPd3OUHNitlgPBMnyUijo2ZrDPEGR1z6MbsA3gLsXbMg8tt+P0Eg8rbw+g5kaq3z9mlOfDR6h5G1PrVtwx0upNCwaSYsUhV1mXfIkJCM8xmeXDXS3fkpKukU1VRkl29dNnAoJNIeupnk2uZU/6h2Bo5/0eL+ZgIK0MqfeagopBUjsM6CsKO2ooi0U84cKuZb/nf7qFJVZQN/0xVQb10HyVBgeD5xIApWTDYwm/ylaGj4POy7CB7VTCx4c8aMsmwScmoolN10COhwwrliTv3m4DoLfycOmcRCXG6Re2bvqWuHZzaG/Z+IkjxaMFll1TUuPmeLKG/k44GfXLTvsT24Oz0/PX8PtF7FXjIg5rKeUps8SauvEdHa45EiSC+QvowlyJKM5OvvTBGuz93LC37BiJcALPvBKhBUP9A1j/NXwk0fDbbB+FSW/ac/FnVMS/zDIzr5he0ZTPpGM0/n1BOxbd+a1ia0Ftz+/uJTCeYZssBDWuJUd4a17bZmU2zFwV0kn5lhN1/wlFbhVqmsm6Z91HH1zHKlb6v3C7tFf2GGNHAEvPvhYEYE3EmTp5cVo79xCCKHiXtfv8PcKp+ODUIqQMQvjiyEwj2wK0elAxn2HCpFi4io4KJM5BYroMLqhQFA5+aaGqEUu0m7EcboCdkROw3JfnzaRlox4fi1tIfDc65mtjb1YyMPoTHgvy1XOS3gooJXSRaq2q9gZoSby+5tvTe9EBMbNr1nGDwHTALDVYv7rMWMXwl1nxFO1dxrDl7YGGa7N9K4l0Fw6E8SeGr7zpwEWupthTuf8g7m4r9dKevu0MUsZ68tf1fTnJo0AMlUCVFy8lf2UfBt9BEcEyrFJUIzcTkGYVCD5Z4HMowlZw9z5Tk7YBctGqU0ob7xKkzwdNI96Q4J8LrJ7O0+kDJlIUAolgkkG/s+dFo1NYnLUsmDQ/w6vg7Er5SaXn1XAIr5QFAm70emJMS9X8PqrOd7hIOBcaH1x9y4PA1Ha4cAEqlLce9czqVkvL496jEJ7+WDv0a9V1+PsRVjnI0xmTK+IidzTIxZfBJceg0RyE1F6X5YX9DjVIy+gHzw9+t/N+TxZ3hiEpiOaMusuWBC7JiM4GhBuz+o/IvRKUCDNJxm20CsFEfRWN/3PwaxB11TkwxO6rTkmfdT+MCjKf9eeUY/tc8TNmBtAPfqVObyP39wEZLtEZXsP3QKVsEJe432B75qlT8CUJL5yI/D7QfTpkkPra71gRv3lPgK0VrHAzFX4dzGHnpdforTJhR6hDXjswmAiK4gSb1zgcLPEpPhlL/Dj0nl/v16fjX4t+E9/3vK2MYduK+Z8ujTFaw2ugM8JKgUVcPtIpiJ8CHmzBzv2D1TR+SRdZI7VW0fnN/Qu0/qwInCkbBc2QQ89vDv0/jvMRlw2X4t2u+ohdYx+BSf5ZaWj74LZAn9BvqpNDW8UYuWChw812nmnwCBLD20N1FjVRmbxqboxBDwSX01nnGtk8fQRs9+M2mD5SPXr/Z5GyCO58cJECzm5O2g1TNlp6oQoT49kliD1BKwpELYIZgq6yMj4pFtG5/UP81XWCYBiDSEr4vUFjRiYmSKiFm2xV7psXFI06xaZbv2bIj80TFxdVaF1ivDBQj1P+1xn0p8Itlyn0ipIAqMiUhbGWYJyMnxjL8cmpRZDdx7muU7aS3sXKkQqo7Fjssyvx4fHzo2lMVfilQJ0jxTUJ1mfXBjv1QwU8pXOaeMaU7ex+mQhcSEhilkbxam4MD40k0Sbaiv/T+ksAv+0sW2WS1KACBSgpU2Atv1ld5VXyIJScWJc/PEgiTqSTHfAbYXd++VGuvrac083ZOLq/+oiHheiOIJ1u2A0d6IWeynE0IcsaX1CjKlaMKvX/sjzLbLRkoMKn/OU9PZ51zy3kged7fU2N+yuHc38kTFWEG8j0dfypieqbM5oyDZqzXFzNkz5LRHWUsoUxU2NoprrDLXv8gbWvBjpoCAeh7oz7bspC9BVxK7qwBCwC0TIZKY6JO4k84ECmD/0A1xSJYZZInm8DriPIczJjF4lMw3NX0BOvCjDhQGkp274ajHa/V8ck0N5NNv71//y3NQ+rOUlQWyGC1fXKu/z0GQfD68Kr5XQwE4cbCfqwke/dofI6d1FxF9L/rcO/o2arqEKuVGgd6zt8Im4q+R2GFMZrrVzQkj4aigrOC/1wtLn+soV/zH/69eGaUg8bJ68ztHzn67pASeqm0kaW9Avp7e6zSZdZtDQ7IYw1jK96179wcpXzWz6NriCpPVWjz3j/WO6+jMf4N5leJbqL6cbTNBlcMj4O3v1mTSqqr7EhdYaVK1mj4SZ/IPSHrTDS/t8XSZdihOMC6ckKcstjnYGxlyv7U6b+U1gul+zy2vbE4PirbDnWQUdJolBzixmBowjY92kgf70+fw0NeQ2RNUg5d88uGDli7SK7UdJcJ4Rz3pi1j47TcL3/TgQG+/vjKunRTi3u2a1yp1XiUPdaRm6FeQVxQ4uVSyeJbDL0OLDr+vybH+QorwekyjWgbsyzhGwUh9RrULnMHpwe8F91xMYjII5JiWUEP6a3gNNvEyL8VxalZJcIjd7bSwYQPNtwqzG1j2j58PLw2FmTDyyfs1VsOmyWuFoYkAuBQQQXBu28KpEExwYFaPJToteRQxX+8Kzg+/l+eqaqObaUYFTio1V+Kx6XTdQ0+PqNTBjJfOrYJP29R/EF71vvQsMgZTUEF3323yQHjfh65w1pZHLeQlAIvROCtrNAgwGeDb458SCzaY4fhHj+ft0VDRRiKEd/n2g8MsYhhE6EgvNHaoLqua0EnMIU2OwP1LHdTGOEqiwzXM31IpI9b/lKnjoN60OX8NE2Gxtokt1XFMUlS4O//PT9TSfTQR1ab14LNvbh+BApdtik+Ff946qnqCaCZTG/q6i6hS2ivU02TeayU1sb1I2lbynQ9Xg6JQaFy/RkJ1/21vDcBXizd24QFf8pBJ4tWmXKTPibu+m9K1lVnO1RQTi3jJxAWztAwnL+Sqhcf+lcx3AMTQ+sjJqvZHuR3SmyjNfJIHZ1EIU63i+wG0/x840DNFmU7e1BbgplCsbACvsXbyikAf5cIo6vpr/T3SA99iZj+JFxM9WDuPKBg4TxlJWsuOrQAor9Yqnm0sECanHZi0WDMBxifLnWNY5CfqUgY7RvMm9eB2w8f7MGs2ikLAzT8lauKQQ1JR7XoYnkHitWKeqxr3PmeJeCQURepASlZm/jaKwnc1voJg8Oqrk3H9ZhoNsQfyxDtJzAKgWdUFuWYWnalKxWqxK1uPb6dOJDCa0OPZZeRMriYaZKxHHf6WwJiHcG5IzwoHbcYSIjxLYIWLSlxnmfUhE89PIA5C9dIcbBzV0It/JKMmGukgpQdNwg+H9aZQwNOIfDb+jfph8F09vz70+N2cGwrekiPjNNhkxvF/29hNerdNedpOLOe6T93CjId/J+IKtePgU5YTmz9jup2r72oTI4V4V6b/uM6ty5b8o3AveEUfl72F46uGkZ1LqbtjCnBZJGhaN68cgnrx9aCYX5fURNEbiopLBapJpMygAPOPD7D1TRwU3pblaodr67wj9vKTaIiHvRE8jGBfA3gfqoUONIOSo+BCk9WA++Vu9YTrlk8HWRLzybvBLgq24F4ZDbhqnaTUowgw0QWGswtwFp1E9AyZ5ZTmtJ2WNoPwqNK9gqxQZhie9HLveu6zxKtEIU/qlJ4WAPRG5V3p2nMnI/ThoutRc/hSIWCrQ3bsLgKAlJi5ZYab9L2yyTJEfJAIGlerWWHKoCdUwiHLoccjFp1RQrVXDakK2CeJQKvHaXns46SfiypgxpbqsLE3eW4shEPpXWRaMNRbHhpyq0Q+9Dq36yy+ieQjY+4EfkGvtKg+IUK/lpED5jhwqSUDaEYqOfIpKRUwy5AOiM4AvTb8j3CPD7ks/3hyY6KDOIIYQbGoOPtRO8i0HVC2ka9PWh4R8u/d5hTHgaAOtEc4x7TiaMFx3LNkjBZMAS4ZjGUVGh2PHwuRxkhC10/m+ckuwJlWk7Rbu6hnpbbFakx2JkkN+e2iSv5LCPn36yu2QWEwy27Zo6qKKX3mdAXAn5Kgt/+BmfE8YWhE9ClSD204sE5j6uwhghV21ddM0bfS+8E9bW/bGj58Nbp9jYnD5bjcPZGNIDCUscfX5TpGHBKA2nM7/F+fk7YtcTw73B9CDqsVAS+p3GH2iom6NvkoaGJX7w0yV01WW09ioIQf1GQ80T4spNFz88eDb8dtKHrIf7JLlqIlbPe/WXGuEl80BW2Im/seX5R8d4rAod/ULPsj7prGaOSRxO7CvLmZ0zqX05Hsrj5UOVJhrRrp0WCkFcBCtFFo1VK0HxRleG72REvaftBBMNige2Zb34G4tReUueeyhMdAnR8Jonln+PQzUzgNLTVlyUylbcSRhPvrDTeGb6TDvtI9J21Qm1YOvgl0FpypmPL1NnEJF4akFTLTO9dm0DlyrpW6XUN60Uy+VhQb/4FlxEZbyddvTKOtJa3cH+9YqogFFtWUE46qzZ80S0vHJyWmV1hAqxqlafLEvYg+tgjnSuSSVXumZ2EquKqCSaijbZSyih0ygu4sdv1geCMfbfGR52SyeVb2D3mNDSa6rZTA/rO0ilew1Mhm2/XGr0VIPIfHMbrm6NQtee5liaUOfo+aoelw2rLJesujTzkzmGkqo9Jd5ojtSX+i0ZfbK9U+TISzL18aKyLnS6tVso3o+8EV4LCGQYiFxLjW+98siArKTKzlYgLUlZAe0BefZSXOPqZiSXwzlfKT7/0ABSwzmbrHXVdOTC+BmyUJgk234qmKQeiTxTl4UN85Mzf4SRXEGVC0Z4Zq4m7VB8NQ6G77As8LfTvGiLGin7s19+1FRmmWyTiKgXTpZVcQUC37b4Q6OjW+xenvEBBiwelbHpQdC79Z7CCT76tUxnI8zh4I2O+sbzA5hxzQ0fzVJ1ew/ufJ487zPh00sbPk8zNXtGXynDR7Q8JtU0XLg3QxdfpsZ5lX42CLxYQurewI8cfxm+JjszK4pqOJjFqqm42HH3Ja41WgNrXOZWs8Ge/NEwtXuLvONDjQGbKollG40oI2R3Be8QIR4ri926j7J2cwOeIKAIuze1uOOY08+taczJvosScnvPQ14WlQtrcUtzUoGl7X7r4hFqp/d8jX7lX/1a/rUwYhKx7tk4ubaAuBEk46gpPWW20nAn6Zz0eKv3cH87po6uF/+fl2PUrOjJgzevUUCbH9puWC8LxC+aX5juQaEeexQrRAU5Cb6wCInwFx07BhO/rc8IxwnletQPWKZWy9tVg/c07tW6QwKD64PukWllGKWXymO8YUATGU2/K5U2zwcvFWUVFVOxmLd2YcsR0to0AxdhyYfI09WCBEGx72C0Hyk7csj4cO3FUrIv4LIeCOtS2Gtfx1sgGfBUAt5zIsfw1ZVwSpRfVebueBxPWtGFTCdaS6zzOlOp5jKfRsQClYhfpct0S9l9WURHPWdriQAnLhN1QCtNTNB4CZI5WRKnFwAQYnKikhHImw30la2tyXnuNEvQ1s0htaTm/jKVdhkpU4N81hHB3qVMJYI67x8xkScvyGOjx1sqUL//VbSRqCqfNA7ykMEi5/9zLYNCCJX7YGDGwk+TCGwANDhWUMfzSo91TUKuNNoJGMCAhnVWqD1AOeFpgNUcMOJEAvd8la2oZoBRFTC+VTVYplW4T2OfYFPML/dW73xClKUhnqn5WxdutvpzAFOqYCC4vNW1O+iNFFrjVf/w4J91X50gMl6PZzGXBMJCbQY+uosTEve0/ftdQlNhLvXqDLnyKeLMts99oaH251wifHlMSB1uMHmupQjKALBZhyUrIMRJ3OpO9Q6BFG+UJeC71Zn6W6hO9XI9RypqEXr2ZQY0Y5S7cJB6zFxC9mLcRuY/QnTI4NP3EY7IleqeSqEnHiqkqGmBJR69MsWynLhW3B9Lu+sbxIu7bTes2M/A9s/5a28RlHHpxO9sM2xLnkVXFBJ4BVgHxyCg51Zvn6nae72Go2ybiBG/AnYuRJ1I29xw0HeIzTXwOmiWdJBswvGv7FWrQBCdzzlXSxfHcwXqRVfaBHRCsk3Jgrdbb4hrOQ8vTIlZT0rdNGO1ZJ1Gk4/65K7hMoh/vXsYegwgELs0/Q/OrMDVIPbkXncNljj0gPS/RF7AHIc97E9gh5GOy6UH8XAkT9mrC9DhWHxJJ5oU6sBFaxcbgROrlAFtaYwg/K82D4jRWbSQ5Fh2MBc8jO5lGwPJUoSIdDaykVOnwtV4XeWYNv48dfzAlY0r9zrXfhN7Vm4Jag+eq0U5yeVUZnqkiXG3Ud7gAUqn1Fjo5sn1tuP5/fdeQR055L58AQVvYIUx5W/0OWIY4ihh/06yCvm5QzqNX/tQRUvEcmNu0SpxlYM/E3mocjtDm69WN+uAyOYXi0WY3q7X8cDGRKHpsrCBWsmEqwrPhHY7pHQDDJaQYXtnWpMWv8CI3dO0fYMree8ZSqVyVhQFOygy1038wMyKpyOAZnmdRBeZ3d9MTCAbs0eQR96EI9ftwaaIPu4L9WQluuq/3nvUJr2Bg6ddDkLFexMW1r5kFP8VgggS4jf1vc/nl11r0DXFjx26yid+OPqsqmOCaaS8iRPIzB4MJH/M8osTDTGnkfLUwXk10upjdyM6OLX5p9KomdCXy43pAMhciOCCr3ChMhV6NpsA7/TTRComLgxZgPA+F74R9NHo6W++xMrBXA/3y2G86bBVF/2NvBc2iGit7qJx6IjiEXp1CUfDTvRt02bBjGxm6QDXMX9zZzLNaP/flJDr56LfLaMbjniRcR9VOwbzWoAJCMjVWHOGJ+ZNCUPn60ReUrywyvOdeymaMAoae8Fl8Z4VZU5PRdIowLYY6Xemqmn/69D2JujA5ZkXmMGGBjznmrq+KPpB+smu8UMpQHTLBfUvdZeDpC8OWlJarsvhzjENkHjc3nd2jfqPY7WUWCNoQU7dD+RqaMlqCSpG8r9LX1yxvvXRtgIugfe8G2NCfjDL1OUYxKjyyOCD0wLZuzBO5bCYdCjVgfCsK49ZO6g8FVaNKK+RXMP/bgHsCphiC41/9chxuZBPKdS3Nln2oTw3PwSiAEFbLnoVn6uSnlwx9q9WbH0ziTcFqkvXVL5x30z2Gf3I8xQh7KM/v6T6isuDrV84mMFQgIwdsPy8z2MbEwdouT9wBkVjLMTv+aCNadUYmk4zgX/+bDOeURgozL36iPPAppdWv9WF3CW7kvrhDA6XmXsqO3vRyDZ8K7eNkXkG8nK8hp4KQ1qrevvJvG9bWDfLpi1FKts+amf79jNpu9YYk+f6cNbzJePvF5OzPX94cr2NJCdrxVHutJH6qEyOPZ3C9NppQqAsSgH5eWskJLk9YyJ7hp0M2FqxJJ1ohR36IVBpbz+z543iv89bdvCkvs15BnePejeL7i/xNl12NrGculer04N9DVpKdrGFfsHkFoP5hHca3sqt2ivjV4EvUXwl9uxFj+lb+IGHMG8KuSGW5WTeUoEzq8LYDJkmQeuCufEfyoTg0KdK51e+pXmsSALwuBOpNOzgK8arBpwuxbWaS3+omFDHweLROZ/udizT0eWpom5eh5wbonqDnXFUNBaUDBxn9NBF18bgugf/OpyG7OLHSSFLjGGyiGf2HuTlwEnLz0MylLKEKNWk50g0mXMPeJpiJBmScL4pfTlRMREFStnHknhlCqc45osHDoCePiSXRyQF7iq0ecwNVUmI7OG7/Aq6xnKxitWJEs6sNQvZyDOoS6LGzB+Q05vTBlhgka2tZpFSgQWZpWStW2yCFS2GhJXfMwYa72Zl5RbuY7VDRW/kSA4N3fydSNUcLFOV7A9Kcf8nNSZSByqCVGSwGGrtOjxF4IZA40drOXEV+/aU1gqCdAok8h5z+k36NgZOGBswMQ0nKLxj3iIFGF4KpamJ/lSWvbZaDPCbqKeNB8BVZjrcHyZTVl4gMg83ceIyrDShOKhNG9xFQNx2jf3AiT4S2yh1B67Ame/HgXwMGSu5zODyzO5aMG0ktFHf+/y5u0SXG3y6VNmHVNJvvRHsZsSLjG1myAMvw4S7JWqj+1oD0bp7sJah6LhH+pO2IWcHl1tnJMsmAzd2RgqqY3HatW7LYhiSk04bDS+0gZGWP5R+2lpZ2BKBGwRxfA2+Nb6c4d+9V00TL0j1vIYyDOdy2YWxZGDnz2dYxQcWC89IOppteWToVBXgGBmrR4KsULB9Ga4VUB9XqhbErgGXqflUhE0ZAofxcjovay3cGEJq7J/XMUAsXp2vyCysCOse/sDm1BUsnuIGwvEQWCn6pFwfPv6Vasww7go8VY4T57OXIKBgGE2j8XB+/MMGBUuN6fznkQj6L8GqiLa+cT9DiRUDL20hi+Sa+gnobdirr4Otd+8Hfc4QlECnqfYbNEeqsgCyRw6r6QeAupWBPSYDgSAgxNKi6ajZYbElVNPS2HIUmPQeQ5qWYs7vNAYD20BwyYGGn78ru5L5gQIcnz+CfNqgN2BqcW9g/EAggj5FDABHbHC6EEMP9w70csRbUrmfMUKMm3NiqG0RUkbTV8Yd4+gu02wKkbUd2HhVYMi4EJL8+Te78UYPqrEKz2YyktVKbD3eXDsK8llrPAYTY2ekkjJgt586CMvALf0urNJzP4Pq73oJ6C0ODL3lkB1oEHhFZItUGwGEi3b0dOcPRAdTk91PkDb91bKorQ5gXUYTvyrqPYqpsCSmZSt6BRkXc9D+l762M9xJrs/+s99MHZ1SmrUXj5A7t838m0HYQVL8/64icwnPRxEOuSIe4A7oejoOm06koTYoWEBnQybzoppgkRD1K413DcWCO+JlgHRpfgaIpfGQe3cqcHDooz8cHZl+riUHoSu4PbStirrlcOrxmZ4bZxHQjHO9GspyIcor5U7NheR1IEY/ugc4/fTC/J6XeBj0p5OhDbxLYYqpePSqCSPtWsmAUb24TFus7QwCZlELHRaHUTcZ5Vbdj3TEkD6cwBtMz5Xz7OCOU3kEiQ8vUEOY2xo4s2TLZnAwGkU3cOKjkADZE5iik+6gkO3Cl15O5CnVcaVdYTa4S09hByW+S9fj7YBbsq8DZBT5c02jZTY2hoIqOSY7+aTk4d4CpsAQ9L8PbB4ZoHi8HX7rjY9SHxZfgTKGOTkW1al9mr63uKXHyrxjX5LuK9TSJXmsepSSL9oQTd3n6bbncygh/MUy+J9Ga7p5V+eS9NJmcrVsNgqCTqcOX6Ngm7bLiN+eQ56BkRgoxheExAzq/LM23gDPG4lePntxvzJroZ5kaizajkHJYfZd/gVz6HylJkFhEBUMJpVNxzKfMEeJtN1Rc5E1hPGHEfAqeWB4lio7CM21xN29gS7DiqjQgyK/pjTMrH3o9wjcXho/UPDJcjORKCcGKQafpzSUgAEVZK7het7yzOCq0orLuzK3GtY0Vrl5+hEn/GxSDmK3Iq/h/PP+kSWJcPO0ReqjL9SbhnoacM0QFNJ5GWKm+ZItPujy8gN8cM1N6OKZFqZRIuD2yG7v97HlGHmk/6ocIRxRp0Apmfkx7fHDRv3gZWi1P53Hcvl3SzalAvnAKWf1tUhUtggk5R3PWRb0+g5Efe/DNb4apjO4RWHLgRTtFHH/RAjx0lSXiEMi/UunnDfa8q1YvZ118KcmFBI3Z4Q9aUikAdUot4iuht8QqIbAwCTh/mdxAo36TjWaAY7kpt6TtuMy8JX+6ZGMhOLimJy+JVgn1N2UqEzdKPY79dPGbHHivr0oUqNZf2CykStJZw7Xh9Q8VLiQC6sh97TrkNSrkNnxe1G5S50TuEJIf6lEJvOfY7+ZfEE9lr4qJ1zajONIu8r8Jqqpe+X4ZYe/0Mv5UhYmrhkjyn/iD8gDHJ1y49HNyHARLc9n3Ida4eo6id6PTx55fz0HYXFdBcbGvyPepPE1hC8y3gZpnvA5D4hjiR8lwgzBQ12uir6+kBSLYl658jtKuZgamktcvhNmn4wgmLh43Q5uO/stREdJUqSiHYN+TyyZebynP44Is4kN5xk0RBl2p9mwKS1ADHRY/nE00knZS94C/OzFn3l8c+QXrXwX8rFpGwec0nFizx20BTQJfdYUhMijbO1b9mbuBV5hkcupCQ/rxLep7L0xYDxUlWcZ6hapmDIwqVo1lehBGgeNynFVPf5A8/4DK/RVQoGI6QsGdYQuulBi+kvtJPyg/YHLlcZKddmms4sowwXs1VYHERelQhSc5s89HDOLcsG7xWpux5S+SDF3Qa2s32jJB5bTybDi2izmIMUnhBNNWJBBjV0gkyA9lKI/DeYx3bafrYSjcK8BKYpoGZmoConOKnoaoUmRJOJft7135NUMuDLWfoEgPJVe+DhwBbYApMnjREL7XRYysOw5i0/1PWxeoT2H+gADzI0xKn2ABp1BzmhiuwqbzkTY1+BGOTouh2mV5/LAAbq8PYScXjqR/jzyqvjAO2Rzq82Gpnk2KKHPEE9nPfSo4+LS+aqx2Z6larvkFU7ZXPgESIxDV8rFKrDlBmNYBMiL132+Hlwc6IjyfhDxlhRDerzfe/g3W9n/486Ko6t/FQDx4Pn3IyZFFHbqOTji4VCPCGHOpQKqOVp/0JeLlcIqs9myaV/RN3Xzstr2mitVWxU6j8pIT5pyDoZ8qhyK55mvMahesed/6ok0RlbmDdPQwuRi6UdToavOOx0xCcxIqsd2Ni0iAom0WWfrsMOOii0kwfV42m80TxyLeII1T639GsKefjwbep1jJr6zUVABKtFs8M5eeF7NukiVijnj0JSsKKgAONG8Z5OIhfk5CI/KN0daVbvDMCaXuLtx1DdrWAUeur+ajznHpTxFzo4cenrsI8y5WoUqMUid4WqngRIlv5ERqAjdmDHEi138gvgTphpgMJsEan/ZFKs+CmNpIK6pj6tQygOuB0jkBbVvBcEo2CcD2IV7cKWKtcE+8ZhhwsSj2oPhjpIlbxnCgsWHgAWqGbYq4+H5YQIwAAHnBP1hQAAAAAA">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                
+                <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="https://th.bing.com/th/id/OIP.Mn6M5T9FcksAHZVSvPH_nAHaEJ?w=318&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Hello There</h3>
+
+                <h1>
+                    I am T4Sanjay (Sanjay). <br>
+                    I am a Traveling Tattoo & Piercer Artist <br>
+                    Certified Tattoo Trainer
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                        Latest Works
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About Me
+                    </a>
+                </div>
+
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div> <!-- end home-content -->
+
+        
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+        
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3>About</h3>
+                <h1>More About Me</h1>
+                <p class="lead">I’m a tattoo artist driven by a passion for turning ideas into permanent art. Every piece I create is more than just ink—it’s a story, a memory, or a piece of identity. I specialize in crafting custom designs that reflect each client’s individuality, blending creativity with precision.
+
+With years of experience and a deep respect for the art of tattooing, I focus on delivering not just great designs, but a comfortable and meaningful experience. Whether it’s your first tattoo or your next addition, I’m here to bring your vision to life.</p>
+            </div>
+        </div>
+
+        
+    </section> <!-- end about -->
+    
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3>Portfolio</h3>
+                <h1>See My Latest Projects.</h1>
+                
+                <p class="lead">Tattooing is more than my profession—it’s my art form. I create custom tattoos that are bold, meaningful, and uniquely yours. My goal is to give you a piece you’ll be proud to wear for life.</p>
+            </div>
+        </div>
+
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/tatoo1.jpeg" class="thumb-link" title="The Beetle Car" data-size="1050x1000">
+                                <img src="images/portfolio/gallery/tatoo1.jpeg" 
+                                     srcset="images/portfolio/gallery/tatoo1.jpeg 1x, images/portfolio/gallery/tatoo1.jpeg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                
+                            </h3>
+                            <p class="item-folio__cat">
+                                
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p></p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/tatoo2.jpeg" class="thumb-link" title="Lighthouse" data-size="1050x1050">
+                                <img src="images/portfolio/gallery/tatoo2.jpeg" 
+                                     srcset="images/portfolio/gallery/tatoo2.jpeg 1x, images/portfolio/gallery/tatoo2.jpeg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                
+                            </h3>
+                            <p class="item-folio__cat">
+                                
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p></p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/tatoo3.jpeg" class="thumb-link" data-size="1050x1000">
+                                <img src="images/portfolio/gallery/tatoo3.jpeg" 
+                                     srcset="images/portfolio/gallery/tatoo3.jpeg 1x, images/portfolio/gallery/tatoo3.jpeg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/tatoo4.jpeg" class="thumb-link" data-size="1050x1000">
+                                <img src="images/portfolio/gallery/tatoo4.jpeg.jpeg"
+                                     srcset="images/portfolio/gallery/tatoo4.jpeg 1x, images/portfolio/gallery/tatoo4.jpeg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/tatoo5.jpeg" class="thumb-link" data-size="1050x1000">
+                                <img src="images/portfolio/gallery/tatoo5.jpeg"
+                                     srcset="images/portfolio/gallery/tatoo5.jpeg 1x, images/portfolio/gallery/tatoo5.jpeg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Skaterboy
+                            </h3>
+                            <p class="item-folio__cat">
+                                
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/tatoo6.jpeg" class="thumb-link" data-size="1050x1000">
+                                <img src="images/portfolio/gallery/tatoo6.jpeg"
+                                     srcset="images/portfolio/gallery/tatoo6.jpeg 1x, images/portfolio/gallery/tatoo6.jpeg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Liberty
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/tatoo7.jpeg" class="thumb-link" data-size="1050x1000">
+                                <img src="images/portfolio/gallery/tatoo7.jpeg"
+                                     srcset="images/portfolio/gallery/tatoo7.jpeg 1x, images/portfolio/gallery/tatoo7.jpeg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/tatoo8.jpeg" class="thumb-link" data-size="1050x1000">
+                                <img src="images/portfolio/gallery/tatoo8.jpeg"
+                                     srcset="images/portfolio/gallery/tatoo8.jpeg 1x, images/portfolio/gallery/tatoo8.jpeg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+                        
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Lady Shutterbug
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+<div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/download.jpg" class="thumb-link" data-size="1050x1000">
+                                <img src="images/portfolio/gallery/download.jpg"
+                                     srcset="images/portfolio/gallery/download.jpg 1x, images/portfolio/gallery/download.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Lady Shutterbug
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/tatoo10.jpeg" class="thumb-link" data-size="1050x1000">
+                                <img src="images/portfolio/gallery/tatoo10.jpeg"
+                                     srcset="images/portfolio/gallery/tatoo10.jpeg 1x, images/portfolio/gallery/tatoo10.jpeg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Lady Shutterbug
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="#" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+            </div>
+        </div> <!-- end masonry -->
+
+    </section> <!-- end works -->
+
+
+
+    <!-- testimonials
+    ================================================== -->
+    <div class="s-testimonials">
+
+        <div class="overlay"></div>
+
+        <div class="row testimonials-header">
+            <div class="col-full">
+                <h1 class="h02">What People Say.</h1>
+            </div>
+        </div>
+
+        <div class="row testimonials">
+
+            <div class="col-full testimonials__slider">
+
+                <div class="testimonials__slide">
+                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>Absolutely loved the tattoo! The detailing and precision are next level. It turned out even better than I imagined.</p>
+                    <div class="testimonials__author h06">
+                        Tim Cook
+                        <span>Ernakulam</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>Very professional experience from start to finish. The artist made me feel comfortable, and the result is simply amazing.</p>
+                    <div class="testimonials__author h06">
+                        Sundar Pichai
+                        <span>Goa</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>The creativity and quality of work are outstanding. I keep getting compliments on my tattoo everywhere I go!</p>
+                    <div class="testimonials__author h06">
+                        Satya Nadella
+                        <span>Calicut</span>
+                    </div>
+                </div>
+                
+            </div> <!-- end testimonials__slider -->
+
+        </div> <!-- end testimonials -->
+
+    </div> <!-- end s-testimonials -->
+
+
+    <!-- blog
+    ================================================== -->
+    
+
+
+    <!-- s-stats
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="overlay"></div>
+
+        <div class="row narrow section-intro">
+            <div class="col-full">
+                <h3>Contact</h3>
+                <h1>Say Hello.</h1>
+                
+                <p class="lead">Book Your Appoinment Now.</p>
+            </div>
+        </div>
+
+        <div class="row contact__main">
+            <div class="col-eight tab-full contact__form">
+                <form name="contactForm" id="contactForm" method="post" action="">
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+    <input name="contactPhone" 
+           type="tel" 
+           id="contactPhone" 
+           placeholder="Enter Phone Number" 
+           pattern="[0-9]{10}" 
+           maxlength="10"
+           required 
+           class="full-width">
+</div>
+                    
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary" onclick="send()">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    </fieldset>
+                </form>
+<script src="whatsapp.js">
+    
+</script>
+                
+            
+                
+                        
+            </div>
+            <div class="col-four tab-full contact__infos">
+                <h4 class="h06">Phone</h4>
+                <p>+91 9995452067<br>
+                <br>
+                
+                </p>
+
+                
+
+                <h4 class="h06">Address</h4>
+                <p>
+                T4S Ink World Tatoo Studio<br>
+                Calicut, Kochi
+                <br>
+                
+                </p>
+            </div>
+
+        </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+
+                <div class="footer-logo">
+                    
+                </div>
+
+                <ul class="footer-social">
+                    
+                    <li><a href="https://www.instagram.com/t4sanjay?igsh=anZ0ZnQzMXNoa2Zy">
+                        <i class="im im-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a></li>
+                    
+                </ul>
+                    
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright t4sanjay</span> 
+                    <span>Design by <a href="https://divya-e-567.github.io/">Divya</a></span>	
+                </div>
+
+                <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
